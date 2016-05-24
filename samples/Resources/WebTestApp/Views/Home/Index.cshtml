@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/united/bootstrap.min.css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("ChangeCulture", "Home", FormMethod.Post))
+        {
+            <input type="submit" name="lang" value="en-US" />
+            <input type="submit" name="lang" value="pt-PT" />
+        }
+    </div>
+    <div>
+        <h2>Resource Sets</h2>
+        <div class="form-inline">
+            <div class="form-group">
+                <label for="resourceSet">@Html.Resource("ResourceSet_Name")</label>
+                <input type="text" class="form-control" id="resourceSet" />
+                <input type="button" class="btn btn-default" value="@Html.Resource("Command, Load")" onclick="findResources();" />
+            </div>
+        </div>
+        <div class="well well-sm">
+            <p id="resourceResult" />
+        </div>
+    </div>
+    <script>
+    function findResources() {
+        var id = $('#resourceSet').val();
+        $.getJSON('/api/resources/' + id)
+            .done(function (data) {
+                $('#resourceResult').text(JSON.stringify(data));
+            })
+            .fail(function (jqXHR, textStatus, err) {
+                $('#resourceResult').text('Error: ' + err);
+            });
+    }
+    </script>
+
+</body>
+</html>

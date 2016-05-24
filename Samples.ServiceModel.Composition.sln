@@ -1,0 +1,135 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.ServiceHost", "samples\ServiceModel.Composition\ServiceHosting\Sample.ServiceHost\Sample.ServiceHost.csproj", "{F954A2F4-4382-4791-964C-4B1EEB342597}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference Framework", "Reference Framework", "{EC15EE4E-58E8-4F66-BF57-80F6000E45BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Contracts", "samples\ServiceModel.Composition\ServiceHosting\Sample.Contracts\Sample.Contracts.csproj", "{790D1373-70AE-4CAD-9597-F80EFA6C98EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.ServiceClient", "samples\ServiceModel.Composition\ServiceHosting\Sample.ServiceClient\Sample.ServiceClient.csproj", "{458C292F-503A-4F5C-B785-C3E9E1D52F64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{E6AE6302-351C-4B97-B1F3-B832E1463936}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{889A0DF6-10D3-45FB-AB60-5FB7B360C747}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{9E5595F6-A480-468E-8A75-EFD278D30869}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{11CEA908-CCBB-4214-B389-B07B3836B8CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{248A653E-2BA6-408F-B4E9-F6766A19364B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{1E1ACB25-5BE4-471D-9F9E-D4CCD4ADBEF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{6DA93E13-C8C7-4758-87C5-B07A13D7C0B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.ServiceFacade.Management", "samples\ServiceModel.Composition\ServiceHosting\Sample.ServiceFacade.Management\Sample.ServiceFacade.Management.csproj", "{5BCBC292-955F-405B-A0FD-465853229CE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{BEBDE689-8875-4080-AE83-A5936A2058C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.ServiceClientTest", "samples\ServiceModel.Composition\ServiceHosting\Sample.ServiceClientTest\Sample.ServiceClientTest.csproj", "{CDB71AAF-C740-483B-9810-E099884625A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{A055FFAD-1BA4-4C39-B4E5-079B31BF7BA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.EntityModel", "samples\ServiceModel.Composition\ServiceHosting\Sample.EntityModel\Sample.EntityModel.csproj", "{E4B445FF-DE7B-4A47-8AB3-BE88CECE6AB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{C444599B-45DD-41BE-9675-60F2F6FC0C35}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Facade", "Facade", "{E7A1CE38-8494-42F3-9B8E-ED2CBF569F58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hasseware.ServiceModel", "src\ServiceModel\Hasseware.ServiceModel.csproj", "{FBEAD766-BB58-4C88-A0B0-C41BFA1A184C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F954A2F4-4382-4791-964C-4B1EEB342597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F954A2F4-4382-4791-964C-4B1EEB342597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F954A2F4-4382-4791-964C-4B1EEB342597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F954A2F4-4382-4791-964C-4B1EEB342597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{790D1373-70AE-4CAD-9597-F80EFA6C98EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{790D1373-70AE-4CAD-9597-F80EFA6C98EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{790D1373-70AE-4CAD-9597-F80EFA6C98EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{790D1373-70AE-4CAD-9597-F80EFA6C98EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{458C292F-503A-4F5C-B785-C3E9E1D52F64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{458C292F-503A-4F5C-B785-C3E9E1D52F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{458C292F-503A-4F5C-B785-C3E9E1D52F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{458C292F-503A-4F5C-B785-C3E9E1D52F64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BCBC292-955F-405B-A0FD-465853229CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCBC292-955F-405B-A0FD-465853229CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BCBC292-955F-405B-A0FD-465853229CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BCBC292-955F-405B-A0FD-465853229CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDB71AAF-C740-483B-9810-E099884625A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDB71AAF-C740-483B-9810-E099884625A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDB71AAF-C740-483B-9810-E099884625A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDB71AAF-C740-483B-9810-E099884625A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4B445FF-DE7B-4A47-8AB3-BE88CECE6AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4B445FF-DE7B-4A47-8AB3-BE88CECE6AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4B445FF-DE7B-4A47-8AB3-BE88CECE6AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4B445FF-DE7B-4A47-8AB3-BE88CECE6AB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBEAD766-BB58-4C88-A0B0-C41BFA1A184C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBEAD766-BB58-4C88-A0B0-C41BFA1A184C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBEAD766-BB58-4C88-A0B0-C41BFA1A184C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBEAD766-BB58-4C88-A0B0-C41BFA1A184C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F954A2F4-4382-4791-964C-4B1EEB342597} = {6DA93E13-C8C7-4758-87C5-B07A13D7C0B1}
+		{790D1373-70AE-4CAD-9597-F80EFA6C98EE} = {248A653E-2BA6-408F-B4E9-F6766A19364B}
+		{458C292F-503A-4F5C-B785-C3E9E1D52F64} = {1E1ACB25-5BE4-471D-9F9E-D4CCD4ADBEF4}
+		{E6AE6302-351C-4B97-B1F3-B832E1463936} = {11CEA908-CCBB-4214-B389-B07B3836B8CF}
+		{889A0DF6-10D3-45FB-AB60-5FB7B360C747} = {9E5595F6-A480-468E-8A75-EFD278D30869}
+		{1E1ACB25-5BE4-471D-9F9E-D4CCD4ADBEF4} = {11CEA908-CCBB-4214-B389-B07B3836B8CF}
+		{6DA93E13-C8C7-4758-87C5-B07A13D7C0B1} = {9E5595F6-A480-468E-8A75-EFD278D30869}
+		{5BCBC292-955F-405B-A0FD-465853229CE2} = {E7A1CE38-8494-42F3-9B8E-ED2CBF569F58}
+		{BEBDE689-8875-4080-AE83-A5936A2058C4} = {9E5595F6-A480-468E-8A75-EFD278D30869}
+		{CDB71AAF-C740-483B-9810-E099884625A7} = {A055FFAD-1BA4-4C39-B4E5-079B31BF7BA0}
+		{E4B445FF-DE7B-4A47-8AB3-BE88CECE6AB1} = {BEBDE689-8875-4080-AE83-A5936A2058C4}
+		{C444599B-45DD-41BE-9675-60F2F6FC0C35} = {889A0DF6-10D3-45FB-AB60-5FB7B360C747}
+		{E7A1CE38-8494-42F3-9B8E-ED2CBF569F58} = {889A0DF6-10D3-45FB-AB60-5FB7B360C747}
+		{FBEAD766-BB58-4C88-A0B0-C41BFA1A184C} = {EC15EE4E-58E8-4F66-BF57-80F6000E45BA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://miguelhasse.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = src\\ServiceModel\\Hasseware.ServiceModel.csproj
+		SccProjectTopLevelParentUniqueName0 = Samples.ServiceModel.Composition.sln
+		SccProjectName0 = src/ServiceModel
+		SccLocalPath0 = src\\ServiceModel
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = samples\\ServiceModel.Composition\\ServiceHosting\\Sample.Contracts\\Sample.Contracts.csproj
+		SccProjectTopLevelParentUniqueName2 = Samples.ServiceModel.Composition.sln
+		SccProjectName2 = samples/ServiceModel.Composition/ServiceHosting/Sample.Contracts
+		SccLocalPath2 = samples\\ServiceModel.Composition\\ServiceHosting\\Sample.Contracts
+		SccProjectUniqueName3 = samples\\ServiceModel.Composition\\ServiceHosting\\Sample.EntityModel\\Sample.EntityModel.csproj
+		SccProjectTopLevelParentUniqueName3 = Samples.ServiceModel.Composition.sln
+		SccProjectName3 = samples/ServiceModel.Composition/ServiceHosting/Sample.EntityModel
+		SccLocalPath3 = samples\\ServiceModel.Composition\\ServiceHosting\\Sample.EntityModel
+		SccProjectUniqueName4 = samples\\ServiceModel.Composition\\ServiceHosting\\Sample.ServiceClient\\Sample.ServiceClient.csproj
+		SccProjectTopLevelParentUniqueName4 = Samples.ServiceModel.Composition.sln
+		SccProjectName4 = samples/ServiceModel.Composition/ServiceHosting/Sample.ServiceClient
+		SccLocalPath4 = samples\\ServiceModel.Composition\\ServiceHosting\\Sample.ServiceClient
+		SccProjectUniqueName5 = samples\\ServiceModel.Composition\\ServiceHosting\\Sample.ServiceClientTest\\Sample.ServiceClientTest.csproj
+		SccProjectTopLevelParentUniqueName5 = Samples.ServiceModel.Composition.sln
+		SccProjectName5 = samples/ServiceModel.Composition/ServiceHosting/Sample.ServiceClientTest
+		SccLocalPath5 = samples\\ServiceModel.Composition\\ServiceHosting\\Sample.ServiceClientTest
+		SccProjectUniqueName6 = samples\\ServiceModel.Composition\\ServiceHosting\\Sample.ServiceFacade.Management\\Sample.ServiceFacade.Management.csproj
+		SccProjectTopLevelParentUniqueName6 = Samples.ServiceModel.Composition.sln
+		SccProjectName6 = samples/ServiceModel.Composition/ServiceHosting/Sample.ServiceFacade.Management
+		SccLocalPath6 = samples\\ServiceModel.Composition\\ServiceHosting\\Sample.ServiceFacade.Management
+		SccProjectUniqueName7 = samples\\ServiceModel.Composition\\ServiceHosting\\Sample.ServiceHost\\Sample.ServiceHost.csproj
+		SccProjectTopLevelParentUniqueName7 = Samples.ServiceModel.Composition.sln
+		SccProjectName7 = samples/ServiceModel.Composition/ServiceHosting/Sample.ServiceHost
+		SccLocalPath7 = samples\\ServiceModel.Composition\\ServiceHosting\\Sample.ServiceHost
+	EndGlobalSection
+EndGlobal

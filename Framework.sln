@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hasseware.ServiceModel", "src\ServiceModel\Hasseware.ServiceModel.csproj", "{FBEAD766-BB58-4C88-A0B0-C41BFA1A184C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hasseware.ServiceModel.Web", "src\ServiceModel.Web\Hasseware.ServiceModel.Web.csproj", "{F256B1F6-1F40-457E-8A4C-E1CD3A587A22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hasseware.Core", "src\Core\Hasseware.Core.csproj", "{D3730F94-0530-4ECE-8CA7-121A7D5ACF4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hasseware.Linq", "src\Linq\Hasseware.Linq.csproj", "{495AFA95-DAEE-476F-B513-698F2393273B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hasseware.ComponentModel.Mapping", "src\ComponentModel.Mapping\Hasseware.ComponentModel.Mapping.csproj", "{757ED35F-67D6-42DD-8EA0-32F568D9895B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hasseware.Resources", "src\Resources\Hasseware.Resources.csproj", "{A1694BFA-8EE3-4C56-8460-C9DF9DEA2C83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hasseware.Web.Resources", "src\Web.Resources\Hasseware.Web.Resources.csproj", "{8E5CCFBF-71FD-41D0-9581-1400A730489B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hasseware.Web.Mvc.EnterpriseLibrary.Validation", "src\Web.Mvc.EnterpriseLibrary.Validation\Hasseware.Web.Mvc.EnterpriseLibrary.Validation.csproj", "{5BAFDF0A-0C8C-4F6E-81CD-AEC559229233}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hasseware.Web.Http.EnterpriseLibrary.Validation", "src\Web.Http.EnterpriseLibrary.Validation\Hasseware.Web.Http.EnterpriseLibrary.Validation.csproj", "{E283393A-B836-47F6-AF48-5030A309E607}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBEAD766-BB58-4C88-A0B0-C41BFA1A184C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBEAD766-BB58-4C88-A0B0-C41BFA1A184C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBEAD766-BB58-4C88-A0B0-C41BFA1A184C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBEAD766-BB58-4C88-A0B0-C41BFA1A184C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F256B1F6-1F40-457E-8A4C-E1CD3A587A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F256B1F6-1F40-457E-8A4C-E1CD3A587A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F256B1F6-1F40-457E-8A4C-E1CD3A587A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F256B1F6-1F40-457E-8A4C-E1CD3A587A22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3730F94-0530-4ECE-8CA7-121A7D5ACF4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3730F94-0530-4ECE-8CA7-121A7D5ACF4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3730F94-0530-4ECE-8CA7-121A7D5ACF4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3730F94-0530-4ECE-8CA7-121A7D5ACF4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{495AFA95-DAEE-476F-B513-698F2393273B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495AFA95-DAEE-476F-B513-698F2393273B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495AFA95-DAEE-476F-B513-698F2393273B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495AFA95-DAEE-476F-B513-698F2393273B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757ED35F-67D6-42DD-8EA0-32F568D9895B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757ED35F-67D6-42DD-8EA0-32F568D9895B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757ED35F-67D6-42DD-8EA0-32F568D9895B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757ED35F-67D6-42DD-8EA0-32F568D9895B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1694BFA-8EE3-4C56-8460-C9DF9DEA2C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1694BFA-8EE3-4C56-8460-C9DF9DEA2C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1694BFA-8EE3-4C56-8460-C9DF9DEA2C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1694BFA-8EE3-4C56-8460-C9DF9DEA2C83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E5CCFBF-71FD-41D0-9581-1400A730489B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E5CCFBF-71FD-41D0-9581-1400A730489B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E5CCFBF-71FD-41D0-9581-1400A730489B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E5CCFBF-71FD-41D0-9581-1400A730489B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BAFDF0A-0C8C-4F6E-81CD-AEC559229233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BAFDF0A-0C8C-4F6E-81CD-AEC559229233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BAFDF0A-0C8C-4F6E-81CD-AEC559229233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BAFDF0A-0C8C-4F6E-81CD-AEC559229233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E283393A-B836-47F6-AF48-5030A309E607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E283393A-B836-47F6-AF48-5030A309E607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E283393A-B836-47F6-AF48-5030A309E607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E283393A-B836-47F6-AF48-5030A309E607}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://miguelhasse.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = src\\Resources\\Hasseware.Resources.csproj
+		SccProjectName1 = src/Resources
+		SccLocalPath1 = src\\Resources
+		SccProjectUniqueName2 = src\\Web.Resources\\Hasseware.Web.Resources.csproj
+		SccProjectName2 = src/Web.Resources
+		SccLocalPath2 = src\\Web.Resources
+		SccProjectUniqueName3 = src\\ComponentModel.Mapping\\Hasseware.ComponentModel.Mapping.csproj
+		SccProjectName3 = src/ComponentModel.Mapping
+		SccLocalPath3 = src\\ComponentModel.Mapping
+		SccProjectUniqueName4 = src\\Core\\Hasseware.Core.csproj
+		SccProjectName4 = src/Core
+		SccLocalPath4 = src\\Core
+		SccProjectUniqueName5 = src\\Linq\\Hasseware.Linq.csproj
+		SccProjectName5 = src/Linq
+		SccLocalPath5 = src\\Linq
+		SccProjectUniqueName6 = src\\ServiceModel.Web\\Hasseware.ServiceModel.Web.csproj
+		SccProjectName6 = src/ServiceModel.Web
+		SccLocalPath6 = src\\ServiceModel.Web
+		SccProjectUniqueName7 = src\\ServiceModel\\Hasseware.ServiceModel.csproj
+		SccProjectName7 = src/ServiceModel
+		SccLocalPath7 = src\\ServiceModel
+		SccProjectUniqueName8 = src\\Web.Mvc.EnterpriseLibrary.Validation\\Hasseware.Web.Mvc.EnterpriseLibrary.Validation.csproj
+		SccProjectName8 = src/Web.Mvc.EnterpriseLibrary.Validation
+		SccLocalPath8 = src\\Web.Mvc.EnterpriseLibrary.Validation
+		SccProjectUniqueName9 = src\\Web.Http.EnterpriseLibrary.Validation\\Hasseware.Web.Http.EnterpriseLibrary.Validation.csproj
+		SccProjectName9 = src/Web.Http.EnterpriseLibrary.Validation
+		SccLocalPath9 = src\\Web.Http.EnterpriseLibrary.Validation
+	EndGlobalSection
+EndGlobal

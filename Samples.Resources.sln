@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hasseware.Resources", "src\Resources\Hasseware.Resources.csproj", "{A1694BFA-8EE3-4C56-8460-C9DF9DEA2C83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hasseware.Web.Resources", "src\Web.Resources\Hasseware.Web.Resources.csproj", "{8E5CCFBF-71FD-41D0-9581-1400A730489B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference Framework", "Reference Framework", "{B3D684E5-30C6-4498-9D78-4F95EDF933F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTestApp", "samples\Resources\WebTestApp\WebTestApp.csproj", "{6A6B0421-BE49-4C62-BA39-E1D8B1AF59F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1694BFA-8EE3-4C56-8460-C9DF9DEA2C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1694BFA-8EE3-4C56-8460-C9DF9DEA2C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1694BFA-8EE3-4C56-8460-C9DF9DEA2C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1694BFA-8EE3-4C56-8460-C9DF9DEA2C83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E5CCFBF-71FD-41D0-9581-1400A730489B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E5CCFBF-71FD-41D0-9581-1400A730489B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E5CCFBF-71FD-41D0-9581-1400A730489B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E5CCFBF-71FD-41D0-9581-1400A730489B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6B0421-BE49-4C62-BA39-E1D8B1AF59F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6B0421-BE49-4C62-BA39-E1D8B1AF59F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6B0421-BE49-4C62-BA39-E1D8B1AF59F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6B0421-BE49-4C62-BA39-E1D8B1AF59F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A1694BFA-8EE3-4C56-8460-C9DF9DEA2C83} = {B3D684E5-30C6-4498-9D78-4F95EDF933F6}
+		{8E5CCFBF-71FD-41D0-9581-1400A730489B} = {B3D684E5-30C6-4498-9D78-4F95EDF933F6}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://miguelhasse.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = samples\\Resources\\WebTestApp\\WebTestApp.csproj
+		SccProjectName1 = samples/Resources/WebTestApp
+		SccLocalPath1 = samples\\Resources\\WebTestApp
+		SccProjectUniqueName2 = src\\Resources\\Hasseware.Resources.csproj
+		SccProjectTopLevelParentUniqueName2 = Samples.Resources.sln
+		SccProjectName2 = src/Resources
+		SccLocalPath2 = src\\Resources
+		SccProjectUniqueName3 = src\\Web.Resources\\Hasseware.Web.Resources.csproj
+		SccProjectTopLevelParentUniqueName3 = Samples.Resources.sln
+		SccProjectName3 = src/Web.Resources
+		SccLocalPath3 = src\\Web.Resources
+	EndGlobalSection
+EndGlobal
