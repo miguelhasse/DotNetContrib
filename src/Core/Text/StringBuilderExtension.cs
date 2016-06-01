@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.Globalization;
+using System.Reflection;
 
 namespace System.Text
 {
@@ -208,6 +209,197 @@ namespace System.Text
                 }
             }
             return @this;
+        }
+
+        public static string ToSlug(this string @this)
+        {
+            var sb = new StringBuilder(@this.Length);
+            bool prevdash = false;
+
+            foreach (char c in @this)
+            {
+                if ((c >= 'a' && c <= 'z') || (c >= '0' && c <= '9'))
+                {
+                    sb.Append(c);
+                    prevdash = false;
+                }
+                else if (c >= 'A' && c <= 'Z')
+                {
+                    sb.Append(Char.ToLower(c));
+                    prevdash = false;
+                }
+                else if ((int)c >= 128)
+                {
+                    string remapping;
+                    if (TryRemapInternationalCharToAscii(c, out remapping))
+                    {
+                        sb.Append(remapping);
+                        prevdash = false;
+                    }
+                }
+                else if (c == ' ' || c == ',' || c == '.' || c == '/' ||
+                    c == '\\' || c == '-' || c == '_' || c == '=')
+                {
+                    if (!prevdash && sb.Length > 0)
+                    {
+                        sb.Append('-');
+                        prevdash = true;
+                    }
+                }
+            }
+            if (prevdash) sb.Length--;
+            return sb.ToString();
+        }
+
+        public static int TrimmedCompareTo(this string @this, string str, bool ignoreCase)
+        {
+            return TrimmedCompare(@this, str, ignoreCase);
+        }
+
+        public static int TrimmedCompareTo(this string @this, string str, CultureInfo culture, CompareOptions options)
+        {
+            return TrimmedCompare(@this, str, culture, options);
+        }
+
+        public static int TrimmedCompare(string strA, string strB, bool ignoreCase)
+        {
+            return TrimmedCompare(strA, strB, CultureInfo.CurrentCulture,
+                ignoreCase ? CompareOptions.IgnoreCase : CompareOptions.None);
+        }
+
+        public static int TrimmedCompare(string strA, string strB, CultureInfo culture, CompareOptions options)
+        {
+            if (culture == null)
+            {
+                throw new ArgumentNullException("culture");
+            }
+            if (strA == null || strB == null)
+            {
+                if ((object)strA == (object)strB)
+                    return 0;
+
+                return (strA != null) ? 1 : -1;
+            }
+            int offsetA, lengthA, offsetB, lengthB;
+            FindTrimmedSubstring(strA, out offsetA, out lengthA);
+            FindTrimmedSubstring(strB, out offsetB, out lengthB);
+
+            return culture.CompareInfo.Compare(strA, offsetA, lengthA, strB, offsetB, lengthB);
+        }
+
+        /// <summary>
+        /// Find the trimmed substring offset and length in the current instance
+        /// </summary>
+        private static void FindTrimmedSubstring(string str, out int offset, out int length)
+        {
+            offset = 0;
+            while (Char.IsWhiteSpace(str[offset]) && offset < str.Length)
+                offset++;
+
+            length = str.Length - offset;
+            while (Char.IsWhiteSpace(str[offset + length - 1]) && length > 0)
+                length--;
+        }
+
+        private static bool TryRemapInternationalCharToAscii(char c, out string result)
+        {
+            switch (Char.ToLower(c))
+            {
+                case 'à':
+                case 'å':
+                case 'á':
+                case 'â':
+                case 'ä':
+                case 'ã':
+                case 'ą':
+                    result = "a";
+                    return true;
+                case 'è':
+                case 'é':
+                case 'ê':
+                case 'ë':
+                case 'ę':
+                    result = "e";
+                    return true;
+                case 'ì':
+                case 'í':
+                case 'î':
+                case 'ï':
+                case 'ı':
+                    result = "i";
+                    return true;
+                case 'ò':
+                case 'ó':
+                case 'ô':
+                case 'õ':
+                case 'ö':
+                case 'ø':
+                case 'ő':
+                case 'ð':
+                    result = "o";
+                    return true;
+                case 'ù':
+                case 'ú':
+                case 'û':
+                case 'ü':
+                case 'ŭ':
+                case 'ů':
+                    result = "u";
+                    return true;
+                case 'ç':
+                case 'ć':
+                case 'č':
+                case 'ĉ':
+                    result = "c";
+                    return true;
+                case 'ż':
+                case 'ź':
+                case 'ž':
+                    result = "z";
+                    return true;
+                case 'ś':
+                case 'ş':
+                case 'š':
+                case 'ŝ':
+                    result = "s";
+                    return true;
+                case 'ñ':
+                case 'ń':
+                    result = "n";
+                    return true;
+                case 'ý':
+                case 'ÿ':
+                    result = "y";
+                    return true;
+                case 'ğ':
+                case 'ĝ':
+                    result = "g";
+                    return true;
+                case 'ř':
+                    result = "r";
+                    return true;
+                case 'ł':
+                    result = "l";
+                    return true;
+                case 'đ':
+                    result = "d";
+                    return true;
+                case 'ß':
+                    result = "ss";
+                    return true;
+                case 'Þ':
+                    result = "th";
+                    return true;
+                case 'ĥ':
+                    result = "h";
+                    return true;
+                case 'ĵ':
+                    result = "j";
+                    return true;
+                default:
+                    result = String.Empty;
+                    return false;
+            }
         }
 
         private static bool IsValidName(char c)

@@ -53,12 +53,15 @@
     <Compile Include="..\Common\CommonVersionInfo.cs">
       <Link>Properties\CommonVersionInfo.cs</Link>
     </Compile>
+    <Compile Include="Collections\Concurrent\ChunkPartitioner.cs" />
+    <Compile Include="Collections\Concurrent\SingleItemPartitioner.cs" />
     <Compile Include="Configuration\ConnectionStringNameValidator.cs" />
     <Compile Include="Configuration\UriFormatValidator.cs" />
     <Compile Include="Interop\Enumerations.cs" />
     <Compile Include="Interop\UnsafeNativeMethods.cs" />
     <Compile Include="IO\BigEndianBinaryReader.cs" />
     <Compile Include="IO\BigEndianBinaryWriter.cs" />
+    <Compile Include="Linq\TaskLinqExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -67,6 +70,9 @@
     </Compile>
     <Compile Include="Security\SecurityHelper.cs" />
     <Compile Include="Text\StringBuilderExtension.cs" />
+    <Compile Include="Threading\CancellationTokenExtensions.cs" />
+    <Compile Include="Threading\Tasks\TaskCompletionSourceExtensions.cs" />
+    <Compile Include="Threading\Tasks\TaskExtensions.cs" />
     <Compile Include="UnixTime.cs" />
     <Compile Include="ComponentModel\UnixTimeTypeConverter.cs" />
   </ItemGroup>
