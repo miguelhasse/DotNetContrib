@@ -34,22 +34,21 @@ namespace WebTestApp
             writer.Generate();
         }
 
-        public static string GetGlobalResourceJson(string expression)
+        public static string GetResourceJson(string classKey)
         {
-            ResourceExpressionFields fields = ResourceExpressionBuilder.ParseExpression(expression);
             //var config = httpContext.GetSection("system.web/globalization") as GlobalizationSection;
 
             var ci = CultureInfo.CurrentUICulture;
-            var enumerator = Hasseware.Web.Compilation.ResourceProviderFactory.GetGlobalResourceEnumerator(fields.ClassKey, ci);
+            var enumerator = Hasseware.Web.Compilation.ResourceProviderFactory.GetGlobalResourceEnumerator(classKey, ci);
 
             if (enumerator != null)
             {
-                var resources = new List<dynamic>();
+                var resources = new Dictionary<string,string>();
 
                 while (enumerator.MoveNext())
-                    resources.Add(new { key = enumerator.Key, value = enumerator.Value });
+                    resources.Add(enumerator.Key.ToString(), enumerator.Value.ToString());
 
-                return (new JavaScriptSerializer()).Serialize(new { classkey = fields.ClassKey, culture = ci.Name, resources });
+                return (new JavaScriptSerializer()).Serialize(new { classkey = classKey, culture = ci.Name, resources });
             }
             return null;
         }

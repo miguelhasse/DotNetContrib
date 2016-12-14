@@ -12,6 +12,7 @@ namespace WebTestApp
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.Ignore("{*allresjson}", new { allresjson = @".*\.resjson(/.*)?" });
 
             routes.MapRoute(
                 name: "Default",
